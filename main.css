@@ -10,6 +10,13 @@ padding:16px;
 
 
 }
+.whatishtml{
+    margin-left:230px;
+    padding: 16px;
+    max-width: 80em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 /*Sidenav content and customization*/
 
@@ -21,21 +28,27 @@ padding:16px;
     position: fixed;
     height: 100%;
     overflow: auto;
+    border-right: 2px solid grey;
+    
 }
 /* The navigation menu links */
 .sidenavigation a{
-    margin: 20px;
+    margin: 0px;
     padding: 16px;
     width: 200px;
     display: block; 
     color: Black;
     text-decoration: none;
         font-family: monospace;
+        border-bottom: 2px solid grey;
+        
+
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenavigation a:hover {
   color: grey;
+  background-color: lightgray;
 }
 
 
