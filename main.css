@@ -16,7 +16,12 @@ max-width: 60em;
     border: 1px solid black;
     border-radius: 5px;
 }
-
+.headers-format{
+    margin-left: 60px;
+    margin-top: -30px;
+    font-style: italic;
+    margin-bottom: -30px;
+}
 /*Sidenav content and customization*/
 
 .sidenavigation {
@@ -40,6 +45,7 @@ max-width: 60em;
     text-decoration: none;
         font-family: monospace;
         border-bottom: 2px solid grey;
+        
         
 
 }
