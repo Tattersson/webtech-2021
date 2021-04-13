@@ -33,6 +33,7 @@ max-width: 60em;
     height: 100%;
     overflow: auto;
     border-right: 2px solid grey;
+    align-content: right;
     
 }
 /* The navigation menu links */
@@ -45,6 +46,8 @@ max-width: 60em;
     text-decoration: none;
         font-family: monospace;
         border-bottom: 2px solid grey;
+        
+       padding-left: 100px;
         
         
 
@@ -76,4 +79,10 @@ td{
     padding: 0px;
 
 
+}
+
+@media (max-width: 600px){
+img{
+    display: none;
+}
 }
