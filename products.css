@@ -1,0 +1,29 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+.product-card:hover{
+    background-color: #3a3a3a;
+    transform: scale(1.1);
+    color: white;
+}
+.product-image img{
+    max-width: 100%;
+}
+.product-info{
+    margin-top: auto;
+   
+}
+
+
+

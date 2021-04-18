@@ -1,7 +1,7 @@
 html{
     height: 100%;
     background-color: #ffa112;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Here comes the main content customization*/
@@ -11,6 +11,10 @@ padding:16px;
 max-width: 60em;
 color: white;
 font-weight: 800;
+}
+.main p{
+    font-weight: 400;
+    font-size: medium;
 }
 .whatishtml{
     margin-left:230px;
@@ -25,6 +29,13 @@ font-weight: 800;
     margin-top: -30px;
     font-style: italic;
     margin-bottom: -30px;
+}
+.container-flex{
+    margin-left: 230px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
 }
 /*Sidenav content and customization*/
 
@@ -85,8 +96,15 @@ td{
 
 }
 
-@media (max-width: 600px){
-img{
+/*Phone Screen*/
+@media (max-width: 400px){
+#mclaren{
+    display: none;
+}
+}
+/*Tablet Screen*/
+@media (max-width: 700px){
+#mclaren{
     display: none;
 }
 }
