@@ -36,6 +36,9 @@ font-weight: 800;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #fff;
+    max-width: 60% ;
+    position: fixed;
+    align-content: center;
 }
 /*Sidenav content and customization*/
 
