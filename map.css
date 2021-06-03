@@ -1,0 +1,13 @@
+.mapFrame {
+    margin-left: 10rem;
+    padding: 2rem;
+    width: 90rem;
+    height: 60rem;
+
+
+}
+.mapStyle{
+    display: flex;
+    width: 100%;
+    height: 40rem;
+}

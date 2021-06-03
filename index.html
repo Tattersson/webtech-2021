@@ -2,19 +2,51 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/466523c8e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navigation.css">
     <title>WebDev 2021 - Paski</title>
 </head>
 
 <body>
-    <div class="sidenavigation">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="#">About Me</a>
-        <a href="#">Links</a>
-        <a href="feedback.html">Feedback * </a>
-        <a href="flexbox.html">Flexbox * </a>
-    </div>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span class="link-text logo-text">Home</span>
+                </a>
+                
+                <a href="projects.html" class="nav-link">
+                    <i class="fas fa-project-diagram"></i>
+                    <span class="link-text logo-text">Projects</span>
+                </a>
+                
+                <a href="#" class="nav-link">
+                    <i class="fas fa-id-badge"></i>
+                    <span class="link-text logo-text">About Me</span>
+                </a>
+
+                
+                <a href="#" class="nav-link">
+                    <i class="fas fa-link"></i>
+                    <span class="link-text logo-text">Links</span>
+                </a>
+                
+                <a href="feedback.html" class="nav-link">
+                    <i class="fas fa-comment"></i>
+                    <span class="link-text logo-text">Feedback *</span>
+                </a>
+                
+                <a href="flexbox.html" class="nav-link">
+                    <i class="fas fa-boxes"></i>
+                    <span class="link-text logo-text">Flexbox *</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
     <div class="main">
         <h1>WebDev 2021</h1>
         <h3>Tatu-Topias Paski</h3>
@@ -46,7 +78,7 @@
     
         <h3>Images</h3>
         <p>You can link images using 'img' tag.</p>
-        <img src="images/mclaren-f1" alt="McLaren" id="mclaren" name="McLaren" style="max-width: 80em;border-radius:10px;">
+        <img src="images/mclaren-f1" alt="McLaren" class="mclaren" name="McLaren" style="max-width: 80em;border-radius:10px;">
     
     
     

@@ -1,27 +1,31 @@
-html{
-    height: 100%;
-    background-color: #ffa112;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+
+}
+body::-webkit-scrollbar{
+    width: 0.25rem;
+
+}
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
 }
 
 /*Here comes the main content customization*/
-.main{
-margin-left: 230px;
-padding:16px;
-max-width: 60em;
-color: white;
-font-weight: 800;
-}
-.main p{
-    font-weight: 400;
-    font-size: medium;
-}
+
 .whatishtml{
     margin-left:230px;
     padding: 16px;
     max-width: 80em;
     border: 1px solid black;
-    background-color: white;
     border-radius: 5px;
 }
 .headers-format{
@@ -36,45 +40,28 @@ font-weight: 800;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #fff;
-    max-width: 60% ;
-    position: fixed;
+    max-width: 60%;
     align-content: center;
 }
-/*Sidenav content and customization*/
 
-.sidenavigation {
-    margin: -8px;;
-    padding: 0px;
-    width: 200px;
-    background-color: #0059a6;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    border-right: 1px solid white;
-    align-content: right;
-    
+.container-search{
+    margin-left : 230px;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
 }
-/* The navigation menu links */
-.sidenavigation a{
-    margin: 0px;
-    padding: 16px;
-    width: 180px;
-    display: block; 
-    color: white;
+
+
+.button-style{
+    font: bold 11px Arial;
     text-decoration: none;
-        font-family: monospace;
-        font-weight: 800;
-        font-size: larger;
-        border-bottom: 1px solid white;
-        
-    text-align: end;  
-
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenavigation a:hover {
-  color: black;
-  background-color: #ffa112;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 10px 25px 10px 25px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 5px;
 }
 
 
@@ -98,16 +85,8 @@ td{
 
 
 }
+.mclaren{
+    max-width: 600px;
+}
 
-/*Phone Screen*/
-@media (max-width: 400px){
-#mclaren{
-    display: none;
-}
-}
-/*Tablet Screen*/
-@media (max-width: 700px){
-#mclaren{
-    display: none;
-}
-}
+
