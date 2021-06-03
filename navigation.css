@@ -2,19 +2,20 @@
 
 .navbar {
 
-    padding: 0px;
+    padding: 0;
     width: 5rem;
+    margin: 0;
     background-color: var(--bg-primary);
     position: fixed;
     height: 100%;
     align-content: right;
-    transition: width 200ms ease;
-    
+    transition: width 200ms ease;    
 }
 .navbar-nav{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0; 
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +23,7 @@
 .navbar:hover{
     width: 16rem; 
 }
+
 .navbar:hover .link-text{
     display: block;
 }
@@ -56,9 +58,9 @@
 fas{
     min-width: 2rem;
     margin: 0 1.5rem;
-    color: #ff7eee;
     transition: var(--transition-speed);
 }
+
 @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0;

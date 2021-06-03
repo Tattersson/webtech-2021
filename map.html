@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="map.css">
 </head>
 <body>  
+
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -51,8 +52,24 @@
     </nav>
 
     <div class="mapFrame">
-        <iframe class="mapStyle" src="https://www.google.com/maps?q=Karhunpääntie3-9Lappeenranta&output=embed" frameborder="0"></iframe>
-
+        <iframe id="map" class="mapStyle" src="https://www.google.com/maps?q=Karhunpääntie3-9Lappeenranta&output=embed" frameborder="0"></iframe>
     </div>
+    <div class="search">
+    <h4>Search for a place</h4> 
+    <tr>
+        <td><label>Street:</label></td>
+        <td><input class="subject-text" type="text" id="street" name ="street"></td>
+    </tr>
+    <tr>
+        <tr>
+            <td><label>City:</label></td>
+            <td><input class="subject-text" type="text" id="city" name ="city"></td>
+        </tr>
+        <tr>
+            <input type = "button" onclick = "js/map.js()" value = "Display">  
+    <button id="search" onclick="js/map.js" class="searchButton">Search</button>
+    
+    </div>
+
 </body>
 </html>

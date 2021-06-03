@@ -20,13 +20,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*Here comes the main content customization*/
-
+.main{
+    margin-left: 6rem;
+}
 .whatishtml{
-    margin-left:230px;
     padding: 16px;
-    max-width: 80em;
     border: 1px solid black;
     border-radius: 5px;
+    
 }
 .headers-format{
     margin-left: 60px;
@@ -87,6 +88,11 @@ td{
 }
 .mclaren{
     max-width: 600px;
+}
+#yhdistys{
+    max-width: 60rem;
+    justify-content: center;
+    padding: 2rem;
 }
 
 
