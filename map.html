@@ -4,12 +4,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/466523c8e9.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maps</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="map.css">
+    <script defer src="./js/map.js"></script>
 </head>
 <body>  
 
@@ -65,11 +65,8 @@
             <td><label>City:</label></td>
             <td><input class="subject-text" type="text" id="city" name ="city"></td>
         </tr>
-        <tr>
-            <input type = "button" onclick = "js/map.js()" value = "Display">  
-    <button id="search" onclick="js/map.js" class="searchButton">Search</button>
-    
+        <button type="button" onclick="search()" id="search" class="search" name="search">Search</button>
     </div>
 
 </body>
-</html>
+</html> 
