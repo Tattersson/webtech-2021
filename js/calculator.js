@@ -1,5 +1,6 @@
 let counter = 0;
 
+
 /*window.onload = function(){
     document.getElementById("firstTextInput").value = 0;
     document.getElementById("secondTextInput").value = 0;
@@ -9,13 +10,22 @@ let counter = 0;
 
 $(function () {
   console.log("Document Loaded Properly");
-
   $("#firstTextInput").val(0);
   $("#secondTextInput").val(0);
   $("#result").val(0);
   $("#counterCol").text("Laskukertoja " + counter + " kpl.");
   console.log("counterCol: " + counter);
 });
+
+
+
+
+function checkInputs(){
+   
+  console.log(firstInput);
+  console.log(secondInput);
+
+}
 
 function calculate() {
   counter++;
@@ -32,6 +42,9 @@ function calculate() {
   console.log("selectedValue: " + selectedValue);
   console.log("selectedFirstTextInput: " + firstInput);
   console.log("selectedSecondTextInput: " + secondInput);
+
+    checkInputs();
+
 
   //#region If-Else
   if (selectedValue == 1) {

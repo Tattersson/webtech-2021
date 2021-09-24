@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col">
         
-          <input type="text" class="form-control" id="firstTextInput" pattern="[0-9]{5}" aria-label="Only numbers please!"/>
+          <input type="text" class="form-control" id="firstTextInput" pattern="[0-9]{5}" aria-label="Only numbers please!" required/>
 
         </div>
         <div class="col">
@@ -39,7 +39,7 @@
           </select>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="secondTextInput" pattern="[0-9]{5}" aria-label="Only numbers please!" />
+          <input type="text" class="form-control" id="secondTextInput" pattern="[0-9]{5}" aria-label="Only numbers please!" required />
         </div>
       </div>
       <div class="row">
@@ -58,6 +58,9 @@
         </div>
         <div class="col" id="counterCol"></div>
       </div>
+    </div>
+    <div class="col text-center">
+      <button class="btn-info btn-outline-dark" id="checkBtn" onclick="checkInputs()">Check Inputs</button>
     </div>
   </body>
 </html>
