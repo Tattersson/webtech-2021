@@ -11,6 +11,11 @@ $(function() {
     $("#firstTextInput").val(0);
     $("#secondTextInput").val(0);
     $("#result").val(0);
-    $("#counter").text("Laskukertoja "+counterCalc+" kpl");
-})
+    $("#counterCol").text("Laskukertoja "+counterCalc+" kpl.");
+});
+$("#calculateBtn").click(function(){
+    counter++;
+    $("#counterCol").text("Laskukertoja "+counterCalc+" kpl.");
+
+});
 
