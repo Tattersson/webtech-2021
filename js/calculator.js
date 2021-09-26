@@ -1,4 +1,6 @@
 let counter = 0;
+var firstInputValue;
+var secondInputValue;
 
 /*window.onload = function(){
     document.getElementById("firstTextInput").value = 0;
@@ -9,6 +11,7 @@ let counter = 0;
 
 $(function () {
   console.log("Document Loaded Properly");
+  //Make MATHRandom to this function to randomise numbers between 0-9
   $("#firstTextInput").val(0);
   $("#secondTextInput").val(0);
   $("#result").val(0);
@@ -23,14 +26,14 @@ function calculate() {
   let selectedText = $("#operationSelect option:selected").text();
   let selectedValue = $("#operationSelect").val();
   let firstInput = $("#firstTextInput").val();
-  let firstInputValue = parseInt(firstInput);
+  firstInputValue = parseInt(firstInput);
   let secondInput = $("#secondTextInput").val();
-  let secondInputValue = parseInt(secondInput);
+  secondInputValue = parseInt(secondInput);
 
   console.log("selectedText: " + selectedText);
   console.log("selectedValue: " + selectedValue);
-  console.log("selectedFirstTextInput: " + firstInput);
-  console.log("selectedSecondTextInput: " + secondInput);
+  console.log("selectedFirstTextInput: " + firstInputValue);
+  console.log("selectedSecondTextInput: " + secondInputValue);
 
   //#region If-Else
   if (selectedValue == 1) {
@@ -49,6 +52,6 @@ function calculate() {
 }
 
 function checkInputs() {
-
-  
+  console.log("firstInputTravel: " + firstInputValue);
+  console.log("secondInputTravel: " + secondInputValue);
 }
