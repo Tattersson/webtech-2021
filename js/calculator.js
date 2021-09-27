@@ -1,6 +1,6 @@
 let counter = 0;
-var firstInputValue;
-var secondInputValue;
+var firstInputText;
+var secondInputText;
 
 /*window.onload = function(){
     document.getElementById("firstTextInput").value = 0;
@@ -25,33 +25,52 @@ function calculate() {
 
   let selectedText = $("#operationSelect option:selected").text();
   let selectedValue = $("#operationSelect").val();
-  let firstInput = $("#firstTextInput").val();
-  firstInputValue = parseInt(firstInput);
-  let secondInput = $("#secondTextInput").val();
-  secondInputValue = parseInt(secondInput);
+  firstInputText = $("#firstTextInput").val();
+  secondInputText = $("#secondTextInput").val();
 
-  console.log("selectedText: " + selectedText);
-  console.log("selectedValue: " + selectedValue);
-  console.log("selectedFirstTextInput: " + firstInputValue);
-  console.log("selectedSecondTextInput: " + secondInputValue);
 
-  //#region If-Else
-  if (selectedValue == 1) {
-    result = firstInputValue + secondInputValue;
-  } else if (selectedValue == 2) {
-    result = firstInputValue - secondInputValue;
-  } else if (selectedValue == 3) {
-    result = firstInputValue * secondInputValue;
+
+  //Here comes the checkInputs
+  if (firstInputText && !isNaN(firstInputText) && secondInputText && !isNaN(secondInputText)) {
+    firstInput = parseInt(firstInputText);
+    secondInput = parseInt(secondInputText);
+    console.log("selectedText: " + selectedText);
+    console.log("selectedValue: " + selectedValue);
+    console.log("selectedFirstTextInput: " + firstInput);
+    console.log("selectedSecondTextInput: " + secondInput);
+    //#region If-Else-Calculation
+    if (selectedValue == 1) {
+      result = firstInput + secondInput;
+    } else if (selectedValue == 2) {
+      result = firstInput - secondInput;
+    } else if (selectedValue == 3) {
+      result = firstInput * secondInput;
+    } else {
+      result = firstInput / secondInput;
+    }
+    //#endregion
+
   } else {
-    result = firstInputValue / secondInputValue;
+    alert("Not a number");
+
   }
-  //#endregion
 
   console.log("Result is: " + result);
   $("#result").val(result);
 }
 
 function checkInputs() {
-  console.log("firstInputTravel: " + firstInputValue);
-  console.log("secondInputTravel: " + secondInputValue);
+  console.log("firstInputTravel: " + firstInput);
+  console.log("secondInputTravel: " + secondInput);
+
+  //if(!/^[0-9]+$/.test(firstInput) && !/^[0-9]+$/.test(secondInput)){
+  //  alert("Please only enter numeric characters only for your Age! (Allowed input:0-9)")
+  //}
+  if (secondInput == NaN || firstInput == NaN) {
+    console.log("Error");
+  } else if (secondInput == NaN && firstInput == NaN) {
+    console.log("Error");
+  } else {
+    calculate();
+  }
 }
