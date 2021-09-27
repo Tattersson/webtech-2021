@@ -4,28 +4,39 @@ var secondInputText;
 var min;
 var max;
 
-
 $(function () {
+  var max = Math.floor(Math.random() * 10) + 1;
+  var min = Math.floor(Math.random() * 10) + 1;
 
-    //var { max, min } = mathRandomFunc();
-
-
-    var max = Math.floor(Math.random() * 10) + 1;
-    var min = Math.floor(Math.random() * 10) + 1;
-
-
-
-
-
-
-  console.log("mathRandomFunc returned values: " + min + " and " + max); //remove this when mathRandomFunc gives values.
+  console.log("mathRandomFunc returned values: " + min + " and " + max);
   console.log("Document Loaded Properly");
-  //Make MATHRandom to this function to randomise numbers between 0-9
+
   $("#firstTextInput").val(min);
   $("#secondTextInput").val(max);
   $("#result").val(0);
   $("#counterCol").text("Laskukertoja " + counter + " kpl.");
   console.log("counterCol: " + counter);
+
+  $("#minusSecond").on("click", function () {
+    var minus = $("#secondTextInput").val();
+    minus--;
+    $("#secondTextInput").val(minus);
+  });
+  $("#plusSecond").on("click", function () {
+    var plus = $("#secondTextInput").val();
+    plus++;
+    $("#secondTextInput").val(plus);
+  });
+  $("#minusFirst").on("click", function () {
+    var minus = $("#firstTextInput").val();
+    minus--;
+    $("#firstTextInput").val(minus);
+  });
+  $("#plusFirst").on("click", function () {
+    var plus = $("#firstTextInput").val();
+    plus++;
+    $("#firstTextInput").val(plus);
+  });
 });
 
 function calculate() {
