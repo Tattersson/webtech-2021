@@ -4,19 +4,21 @@ var secondInputText;
 var min;
 var max;
 
-/*window.onload = function(){
-    document.getElementById("firstTextInput").value = 0;
-    document.getElementById("secondTextInput").value = 0;
-    document.getElementById("result").value = 0;
-    document.getElementById("counter").innerHTML = "Laskukertoja "+counterCalc+" kpl";
-}*/
-$(function mathRancomFunc() {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
-});
 
 $(function () {
+
+    //var { max, min } = mathRandomFunc();
+
+
+    var max = Math.floor(Math.random() * 10) + 1;
+    var min = Math.floor(Math.random() * 10) + 1;
+
+
+
+
+
+
+  console.log("mathRandomFunc returned values: " + min + " and " + max); //remove this when mathRandomFunc gives values.
   console.log("Document Loaded Properly");
   //Make MATHRandom to this function to randomise numbers between 0-9
   $("#firstTextInput").val(min);
