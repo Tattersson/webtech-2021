@@ -58,23 +58,24 @@
 
     </nav>
 
-    <div class="mapFrame">
-        <iframe id="map" class="mapStyle" src="https://www.google.com/maps?q=Karhunpääntie3-9Lappeenranta&output=embed" frameborder="0"></iframe>
+    <div class="container-flex">
+    <div class="mapFrame text-center">
+        <iframe id="map" class="w-75 p-3" src="https://www.google.com/maps?q=Karhunpääntie3-9Lappeenranta&output=embed" frameborder="0"></iframe>
     </div>
     <div class="search">
     <h4>Search for a place</h4> 
     <tr>
         <td><label>Street:</label></td>
-        <td><input class="subject-text" type="text" id="street" name ="street"></td>
+        <td><input class="text-center" type="text" id="street" name ="street"></td>
     </tr>
     <tr>
         <tr>
             <td><label>City:</label></td>
-            <td><input class="subject-text" type="text" id="city" name ="city"></td>
+            <td><input class="text-center" type="text" id="city" name ="city"></td>
         </tr>
         <button type="button" onclick="search()" id="search" class="search" name="search">Search</button>
     </tr>
     </div>
-
+</div>
 </body>
 </html> 
