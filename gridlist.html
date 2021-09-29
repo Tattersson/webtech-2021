@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/gridlist.js"></script>
-  </head>
-  <body>
-    <h1 class="text-uppercase text-center">Grid to list</h1>
-    <button type="button" class="btn btn-toolbar"></button>
 
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="border border-primary">
-          <img src="./images/pexels-efdal-yildiz-917494.jpg" alt="pic1" class="img-thumbnail"/>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>List to Grid</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="gridlist.css">
+  <script src="https://kit.fontawesome.com/466523c8e9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/gridlist.js"></script>
+</head>
+
+<body>
+  <h1 class="text-uppercase text-center">Grid to list</h1>
+
+  <div class="wrapper">
+    <div class="links">
+      <ul>
+        <li class="li-list active" data-view="list-view">
+          <i class="fas fa-grip-lines"></i></i>List View</li>
+        <li class="li-grid" data-view="grid-view">
+          <i class="fas fa-grip-horizontal"></i>Grid View</li>
+      </ul>
+    </div>
+    <div class="view_main">
+      <div class="view_wrap list-view" style="display: block">
+        <div class="view_item">
+          <div class="vi_left">
+            <img src="images/pexels-efdal-yildiz-917494.jpg" alt="image1">
+          </div>
+          <div class="vi_right">
+            <p class="tittle">Image 1</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto quam excepturi
+              debitis quis id.</p>
+            <div class="btn">View More</div>
+          </div>
         </div>
-        <div class="border border-primary">
-          <img src="./images/pexels-jaymantri-4827.jpg" alt="pic2" class="img-thumbnail"/>
+        <div class="view_item">
+          <div class="vi_left">
+            <img src="images/pexels-pixabay-33109.jpg" alt="image2">
+          </div>
+          <div class="vi_right">
+            <p class="tittle">Image 2</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto quam excepturi
+              debitis quis id.</p>
+            <div class="btn">View More</div>
+          </div>
         </div>
-      <div class="border border-primary">
-          <img src="./images/pexels-pixabay-302804.jpg" alt="pic3" class="img-thumbnail"/>
+        <div class="view_item">
+          <div class="vi_left">
+            <img src="images/pexels-pixabay-302804.jpg" alt="image3">
+          </div>
+          <div class="vi_right">
+            <p class="tittle">Image 3</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto quam excepturi
+              debitis quis id.</p>
+            <div class="btn">View More</div>
+          </div>
         </div>
-        <div class="border border-primary">
-          <img src="./images/pexels-pixabay-33109.jpg" alt="pic4" class="img-thumbnail"/>
+        <div class="view_item">
+          <div class="vi_left">
+            <img src="images/pexels-jaymantri-4827.jpg" alt="image4">
+          </div>
+          <div class="vi_right">
+            <p class="tittle">Image 4</p>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto quam excepturi
+              debitis quis id.</p>
+            <div class="btn">View More</div>
+          </div>
         </div>
       </div>
-    </div>
+     
+  
     
-  </body>
+    </div>
+
+
+  <div class="view_wrap grid-view"></div>
+  </div>
+
+  </div>
+
+
+
+</body>
+
 </html>
