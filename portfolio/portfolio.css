@@ -1,0 +1,20 @@
+*{
+    background-color: rgb(91, 74, 110);
+}
+.header{
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    align-content: center;
+
+    height: 5em;
+    background: rgb(51, 0, 66);
+    overflow-x: hidden;
+}
+.img-left{
+    
+}
+.logo{
+    height: relative;
+    max-width: 200px;
+}
